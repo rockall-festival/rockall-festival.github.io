@@ -1,0 +1,22 @@
+body {
+  font-family: "brandon-grotesque",sans-serif;
+  font-size: 18px;
+}
+
+p,
+li {
+  font-size: 1.25rem;
+}
+
+a {
+  color: #2a7ae2;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #2a7ae2;
+  }
+}
+

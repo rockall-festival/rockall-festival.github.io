@@ -24,8 +24,8 @@ then
       esac
   done
 else
-  //echo staging.rockall.is >dist/CNAME
-  git subtree push --prefix dist staging gh-pages;
+
+  git push staging master:gh-pages --force;
 fi;
 
 echo "Deployment completed succesfully.";

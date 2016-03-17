@@ -1,0 +1,32 @@
+if [ "$1" = "production" ]
+then
+  ENV="PRODUCTION";
+else
+  ENV="STAGING";
+fi;
+
+echo "\n#-----------------------------------"
+echo "# Rockall Deployment Helper"
+echo "#-----------------------------------\n"
+echo "Hello friend. You are deploying to the $ENV environment.\n"
+echo "- Not what you intended? Hit CTRL+C to exit."
+
+# deploy
+
+if [ "$ENV" = "PRODUCTION" ]
+then
+  echo "Heads up! You're deploying to the PRODUCTION environment. Is this what you intended?"
+  select yn in "Yes" "No"; do
+      case $yn in
+          Yes ) git push production master;
+          break;;
+          No ) exit;;
+      esac
+  done
+else
+  //echo staging.rockall.is >dist/CNAME
+  git subtree push --prefix dist staging gh-pages;
+fi;
+
+echo "Deployment completed succesfully.";
+

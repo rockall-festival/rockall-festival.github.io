@@ -47,8 +47,10 @@ $on-laptop:        700px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "bootstrap",
         "base",
         "layout",
+        "home",
         "typography",
         "helpers/_margins",
         "helpers/_padding",

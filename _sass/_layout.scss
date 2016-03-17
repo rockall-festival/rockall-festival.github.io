@@ -24,6 +24,10 @@
     }
 }
 
+.wrap {
+    position: relative;
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
@@ -259,40 +263,27 @@ body {
   background-repeat: no-repeat;
 }
 
-#badge {
-    text-align: center;
-    img {
-        margin: auto;
-        width: 250px;
-        height: auto;
-    }
-}
-
 .page-content {
 
 }
 
-#splash {
-  width: 100%;
-  height: 400px;
-  margin-top: -25px;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.wrap-screen-height {
+    height: 100vh;
+}
 
-  background-image: url('/img/rockall-bw.jpg');
-  background-size: 200%;
-  background-position: 55% 50%;
-  background-repeat: no-repeat;
+.wrap-two-thirds-screen-height {
+    height: 66vh;
+}
 
-  @media screen and (min-width: 500px) {
-    background-size: cover;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-  }
+.splash-logo {
+    img {
+        max-width: 175px;
+        height: auto;
 
-
+        @media screen and (min-width: $screen-sm) {
+            max-width: 250px;
+        }
+    }
 }
 
 .icon {
@@ -303,4 +294,11 @@ body {
 .icon-facebook {
     position: relative;
     top: 1px;
+}
+
+.container-wide {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1500px;
 }

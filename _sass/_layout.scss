@@ -281,7 +281,8 @@ body {
         height: auto;
 
         @media screen and (min-width: $screen-sm) {
-            max-width: 250px;
+            max-width: 220px;
+            float: right;
         }
     }
 }

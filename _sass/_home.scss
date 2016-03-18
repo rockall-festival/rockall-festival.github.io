@@ -6,7 +6,7 @@
   z-index: 1;
   background-image: url('/img/rockall-ho.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -87,6 +87,10 @@
     width: 100%;
     height: auto;
   }
+}
+
+.wrap-social {
+  background-color: $rockall-grey-blue;
 }
 
 .wrap-footer {

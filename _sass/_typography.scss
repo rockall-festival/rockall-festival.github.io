@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: "brandon-grotesque",sans-serif !important;
   font-size: 18px;
 }
 
@@ -27,6 +27,7 @@ strong {
 
 p,
 li {
+  letter-spacing: -0.5px;
   font-size: 1.25rem;
 
   &:last-child {

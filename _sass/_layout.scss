@@ -284,6 +284,11 @@ body {
             max-width: 220px;
             float: right;
         }
+
+        @media screen and (min-width: $screen-md) {
+            max-width: 260px;
+            float: right;
+        }
     }
 }
 

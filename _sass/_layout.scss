@@ -272,10 +272,12 @@ body {
 }
 
 .wrap-two-thirds-screen-height {
-    height: 66vh;
+    height: 80vh;
 }
 
 .splash-logo {
+    margin-right: 0.75rem;
+
     img {
         max-width: 150px;
         height: auto;

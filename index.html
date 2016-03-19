@@ -2,6 +2,139 @@
 layout: home
 ---
 
+ <style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 750px;
+                height: 500px;
+            }
+        </style>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqE0fca0qFAGjNd68ent0qEs2zoqb0vr8&sensor=false"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+                    disableDefaultUI: true,
+                    zoomControl: false,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    disableDoubleClickZoom: true,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(64.152199, -21.948912), // New York
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#a1c3dd"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('reykjavik-map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(64.152199, -21.948912),
+                    map: map,
+                    title: 'We\'ll be here!',
+                    icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|CE788D'
+                });
+
+
+            }
+        </script>
+
+
 <div id="splash" class="wrap wrap-splash wrap-screen-height">
   <div class="container container-wide">
     <div class="row">
@@ -22,11 +155,47 @@ layout: home
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <p>What if you could start a new society on a tiny island in the middle of the ocean? What would you keep, what would you discard, what new ways of living might emerge?</p>
+        <p>What if you could start a new society on a tiny island in the middle of the ocean? What would you keep, what would you discard, what new ways of life might emerge?</p>
 
         <p><strong>The Travelling Embassy of Rockall</strong> is collecting ideas towards a new society - and we want your help.</p>
 
-        <p>In 2016, the embassy will visit <strong>Reykjavík, Iceland</strong>. You can apply for citizenship while drinking a cup of coffee, listen to live music, enjoy the art, play around, or get involved in interesting talks and&nbsp;debates.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrap wrap-atlantic-map wrap-two-thirds-screen-height padding-top-larger padding-bottom-larger">
+  <div class="container">
+    <div class="row section__header">
+      <div class="col-sm-12 white-text">
+        <!--<h2>What is Rockall?</h2>-->
+      </div>
+    </div>
+  </div>
+
+  <div id="atlantic-map-annotation">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 white-text medium">
+          <!-- Where is Rockall? -->
+          <p>Rockall is tiny, uninhabited island in the middle of the north Atlantic ocean. Several people have tried and failed to settle&nbsp;there.</p>
+
+          <p><a href="https://en.wikipedia.org/wiki/Rockall" target="_blank">Read more about the island</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrap padding-top-larger padding-bottom-larger">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+        <p>In summer 2016, the Embassy of Rockall will visit <strong>Reykjavík, Iceland</strong>.</p>
+        <p>We’ll host events, installations, workshops and discussions. There’ll be live music, a library, exhibitions and expeditions. Spaces to meet and collaborate, and spaces to relax and play. We’ll build a scale model of the island, we’ll grow food and talk politics, philosophy and economics - and much more besides. Along the way, we hope to discover the ideas and the technology we need to start a new society on Rockall.</p>
 
         <p>You'll find us at Vesturbugt, in the old harbour, from July 1st to September&nbsp;30th.</p>
       </div>
@@ -34,7 +203,7 @@ layout: home
   </div>
 </div>
 
-<div class="wrap wrap-old-harbour-map wrap-two-thirds-screen-height">
+<div id="reykjavik-map" class="wrap wrap-old-harbour-map wrap-two-thirds-screen-height">
 
 </div>
 
@@ -111,7 +280,7 @@ layout: home
       </div>
 
       <div class="col-sm-3">
-        <img src="/img/rockall-logo-playground-transparent-300px.png">
+        <img src="/img/rockall-logo-playground-transparent-white-300px.png">
       </div>
     </div>
   </div>

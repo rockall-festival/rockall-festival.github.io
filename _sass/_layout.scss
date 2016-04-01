@@ -277,19 +277,21 @@ body {
 
 .splash-logo {
     margin-right: 0.75rem;
+    text-align: center;
 
     img {
         max-width: 150px;
         height: auto;
+        margin: auto;
 
         @media screen and (min-width: $screen-sm) {
             max-width: 220px;
-            float: right;
+
         }
 
         @media screen and (min-width: $screen-md) {
             max-width: 260px;
-            float: right;
+
         }
     }
 }

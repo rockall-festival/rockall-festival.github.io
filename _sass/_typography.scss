@@ -29,7 +29,7 @@ h6 {
 
 h1 {
   font-size: 2rem;
-  //text-align: center;
+  letter-spacing: 5px;
   margin-bottom: 2rem;
   position: relative;
   z-index: 100;
@@ -51,7 +51,7 @@ strong {
 
 p,
 li {
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
   font-size: 1.25rem;
 
   &:last-child {

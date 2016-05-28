@@ -10,7 +10,11 @@
     color: $rockall-red;
     font-weight: 600;
 
-    &:hover,
+    &:hover {
+      color: $rockall-gray;
+      background-color: transparent !important;
+    }
+
     &:active,
     &:focus {
       color: $rockall-blue;

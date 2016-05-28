@@ -4,6 +4,11 @@
   height: 45px;
   color: $rockall-blue;
   fill: $rockall-blue !important;
+
+  &:hover {
+    color: $rockall-gray;
+    fill: $rockall-gray !important;
+  }
   //margin-right: 10px;
 }
 
@@ -13,4 +18,9 @@
   height: 45px;
   color: $rockall-blue;
   fill: $rockall-blue !important;
+
+  &:hover {
+    color: $rockall-gray;
+    fill: $rockall-gray !important;
+  }
 }

@@ -1,0 +1,13 @@
+.sidebar {
+
+  .social-icons {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.nav-primary {
+  margin-left: 0;
+
+  a {
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $rockall-red;
+    font-weight: 600;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $rockall-blue;
+      background-color: transparent !important;
+    }
+  }
+}
+
+.link-anchor {
+  position: relative;
+  top: -25px;
+  margin-bottom: -25px;
+}

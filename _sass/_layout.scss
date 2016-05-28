@@ -1,28 +1,3 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: none;
-    border-bottom: none;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
 
 .wrap {
     position: relative;
@@ -95,78 +70,6 @@
         }
     }
 }
-
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
 
 /**
  * Page content
@@ -246,25 +149,7 @@
 }
 
 body {
-    background-color: #fff;
-}
-
-#bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #f0ebe8;
-  background-image: url('/img/pyramids.jpg');
-  background-size: 50% auto;
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-
-.page-content {
-
+    background-color: #f4f3f2;
 }
 
 .wrap-screen-height {
@@ -275,40 +160,25 @@ body {
     height: 80vh;
 }
 
-.splash-logo {
-    margin-right: 0.75rem;
-    text-align: center;
-
-    img {
-        max-width: 150px;
-        height: auto;
-        margin: auto;
-
-        @media screen and (min-width: $screen-sm) {
-            max-width: 220px;
-
-        }
-
-        @media screen and (min-width: $screen-md) {
-            max-width: 260px;
-
-        }
-    }
-}
-
-.icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.icon-facebook {
-    position: relative;
-    top: 1px;
-}
-
 .container-wide {
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
     max-width: 1500px;
+}
+
+/**
+ * Tweak gutter widths
+ */
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: $screen-sm)
+{
+    div[class^="col"] {padding-left:10px !important; padding-right:10px !important;}
+}
+
+@media screen and (min-width: $screen-lg)
+{
+    /*default so you don't need this*/
+    div[class^="col"]{padding-left:15px !important; padding-right:15px !important;}
 }

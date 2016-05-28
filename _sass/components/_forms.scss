@@ -1,0 +1,14 @@
+.form-control {
+  border-radius: 0;
+  border: 3px solid #fff;
+
+  box-shadow: none;
+  font-size: 1.25rem;
+  color: $rockall-blue;
+
+  &:focus {
+    border-color: #eee;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

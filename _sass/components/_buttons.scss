@@ -1,0 +1,17 @@
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: $rockall-blue;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+
+  &:hover {
+    background-color: #aaa;
+    border-color: #aaa;
+  }
+}

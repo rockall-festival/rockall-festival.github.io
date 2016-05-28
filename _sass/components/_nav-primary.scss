@@ -17,6 +17,12 @@
       background-color: transparent !important;
     }
   }
+
+  .active a {
+    background-color: transparent;
+    color: $rockall-blue !important;
+    background-color: transparent !important;
+  }
 }
 
 .link-anchor {

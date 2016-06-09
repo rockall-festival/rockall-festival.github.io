@@ -1,0 +1,52 @@
+.wrap-image-with-letter-overlay {
+  position: relative;
+}
+
+.letter-overlay {
+  z-index: 100;
+  font-size: 10rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+}
+
+@media screen and (min-width: $screen-md) {
+  .letter-overlay {
+    font-size: 15rem;
+  }
+}
+
+.letter-overlay-s {
+  top: 50px;
+  left: 90px;
+}
+
+.letter-overlay-o {
+  bottom: 50px;
+  right: 90px;
+}
+
+.letter-overlay-c {
+  top: -50px;
+  left: 30px;
+}
+
+.letter-overlay-i {
+  bottom: -20px;
+  left: 180px;
+}
+
+.letter-overlay-e {
+  top: 50px;
+  left: 90px;
+}
+
+.letter-overlay-t {
+  top: 50px;
+  left: 90px;
+}
+
+.letter-overlay-y {
+  top: 50px;
+  left: 90px;
+}

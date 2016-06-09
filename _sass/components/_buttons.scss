@@ -10,8 +10,10 @@
   font-weight: 600;
   letter-spacing: 0.25px;
 
-  &:hover {
-    background-color: #aaa;
-    border-color: #aaa;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $rockall-red;
+    border-color: $rockall-red;
   }
 }
